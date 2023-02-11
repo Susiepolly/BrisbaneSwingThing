@@ -452,7 +452,7 @@ input:-webkit-autofill:focus {
 **/
 
 .header-area {
-    background: #000000 url('images/room2.jpg') no-repeat scroll center center / cover;
+    background: #000000 url('images/room2.jpg') repeat scroll center center / cover;
 }
 
 /*.anlge-bg {
@@ -626,7 +626,7 @@ input:-webkit-autofill:focus {
 }
 
 .first-break {
-  background: url('images/swingout.jpg') no-repeat scroll center center / cover;
+  background: url('images/swingout.jpg') repeat scroll center center / cover;
   position: relative;
   color: #ffffff;
 }
@@ -704,7 +704,7 @@ input:-webkit-autofill:focus {
 ***/
 
 .testimonial-area {
-    background: url('images/nickc.jpg') no-repeat scroll center center / cover;
+    background: url('images/nickc.jpg') repeat scroll center center / cover;
     position: relative;
 }
 
@@ -779,7 +779,7 @@ input:-webkit-autofill:focus {
 ***/
 
 .price-area {
-    background: url('images/scream.jpg') no-repeat scroll center center / cover
+    background: url('images/scream.jpg') repeat scroll center center / cover
 }
 
 .price-table h3 {
@@ -828,7 +828,7 @@ input:-webkit-autofill:focus {
 *Accordion
 **/
 .client-area {
-    background: url('images/room2.jpg') no-repeat scroll center center / cover;
+    background: url('images/room2.jpg') repeat scroll center center / cover;
 }
 
 #accordion .panel {
