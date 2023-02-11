@@ -1,0 +1,134 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+.mainmenu-area {
+  float:none;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mainmenu-area #primary-menu > ul > li > a {
+        padding: 30px 12px;
+    }
+    .header-area {
+        padding-top: 80px;
+    }
+    .price-table,
+    .box {
+        padding: 30px 15px;
+    }
+    .price-table.active {
+        padding: 50px 15px;
+    }
+    .single-team {
+        margin-bottom: 15px;
+    }
+    .side-icon-boxes {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .side-icon-box {
+        min-width: 50%;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 13px;
+    }
+    .header-area {
+        padding-top: 120px;
+        padding-bottom: 100px;
+        height: auto;
+    }
+    .page-title h2,
+    .header-text h2 {
+        font-size: 35px;
+    }
+    .mainmenu-area .navbar-toggle {
+        margin-top: 20px;
+    }
+    .mainmenu-area .navbar-toggle .icon-bar {
+        background-color: #ffffff;
+    }
+    .mainmenu-area #primary-menu {
+        background: linear-gradient(#D7497D 0%, #F17245 100%);
+    }
+    .mainmenu-area #primary-menu ul {
+        overflow-y: auto;
+        max-height: 70vh;
+        margin: 0;
+    }
+    .mainmenu-area #primary-menu > ul > li > a {
+        padding: 15px;
+        overflow: hidden;
+    }
+    .box {
+        /**padding: 30px 15px;**/
+        height:auto;
+    }
+    .box-icon {
+        text-align: center;
+    }
+    .box-image{
+        text-align: center;
+        max-width: 100%;
+    }
+    .box h4 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .box-words {
+        margin-top:20px;
+    }
+    .single-blog,
+    .price-table.active {
+        margin-top: 30px;
+    }
+    .single-team {
+        margin-bottom: 15px;
+    }
+    .form-double input {
+        width: 100%;
+    }
+    .footer-top {
+        margin-bottom: 50px;
+    }
+    .x-left {
+        text-align: left;
+    }
+    .mainmenu-area .logo {
+        margin-left: 15px;
+    }
+    .left {
+      float:none;
+    }
+    .right {
+      float:none;
+    }
+    .band-box{
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+    .bands {
+      display: inherit;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
