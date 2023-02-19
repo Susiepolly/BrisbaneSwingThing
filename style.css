@@ -33,12 +33,13 @@ CSS INDEX
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 
+
 :root {
   --menucolour: #D7497D;
   --gradientstartcolour: #D7497D;
   --gradientendcolour: #F17245;
   --backgroundpastel: #FDF9E8;
-  --buttoncolour: #516DA6;
+  --buttoncolour: #5C4673;
 }
 
 
@@ -74,9 +75,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Concert One';
+    font-family: 'sunny_spells_basicregular';
     margin: 0 0 10px;
     font-weight: 600;
+    letter-spacing: 0.05em;
 }
 
 html,
@@ -92,7 +94,10 @@ body {
     color: #515656;
 }
 
-
+.schedule-subheading hr{
+  color: #515656;
+  height:5px;
+}
 /* Remove Chrome Input Field's Unwanted Yellow Background Color */
 
 input:-webkit-autofill,
@@ -241,7 +246,8 @@ input:-webkit-autofill:focus {
 }
 
 .page-title h2 {
-    font-family: 'Concert One';
+    font-family: 'sunny_spells_basicregular';
+    letter-spacing: 0.05em;
     font-size: 50px;
     position: relative;
     margin-bottom: 20px;
@@ -475,11 +481,17 @@ input:-webkit-autofill:focus {
 
 .header-text h2 {
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-.header-text {
+.header {
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 40px;
@@ -488,8 +500,8 @@ input:-webkit-autofill:focus {
     justify-content: center;
     text-align: center;
 }
-.header-text img {
-    max-height: 100vh;
+.header img {
+    max-height: 80vh;
 }
 
 .header-text .button {
@@ -657,6 +669,10 @@ input:-webkit-autofill:focus {
     transform: translateY(-5px)
 }
 
+.team-photo img{
+  width:100%;
+}
+
 .single-team .team-photo {
     margin-bottom: 20px;
     padding-top: 20px;
@@ -822,6 +838,11 @@ input:-webkit-autofill:focus {
     color: #ffffff;
     border-radius: 0 0 50% 50%;
     padding-bottom: 5px;
+}
+
+.price-section{
+  display: flex;
+  justify-content: space-around;
 }
 
 /**
