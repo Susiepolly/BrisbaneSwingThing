@@ -94,6 +94,8 @@ body {
     color: #515656;
 }
 
+
+
 .schedule-subheading hr{
   color: #515656;
   height:5px;
@@ -237,6 +239,9 @@ input:-webkit-autofill:focus {
     margin-left: 5px;
 }
 
+.bolded {
+  font-weight:bold;
+}
 /**
 *Page title
 **/
@@ -368,6 +373,10 @@ input:-webkit-autofill:focus {
 }
 .box-words h3 {
     text-align: center;
+}
+.box-words a{
+  font-weight: bold;
+  color: var(--buttoncolour);
 }
 
 /**
@@ -838,11 +847,6 @@ input:-webkit-autofill:focus {
     color: #ffffff;
     border-radius: 0 0 50% 50%;
     padding-bottom: 5px;
-}
-
-.price-section{
-  display: flex;
-  justify-content: space-around;
 }
 
 /**
