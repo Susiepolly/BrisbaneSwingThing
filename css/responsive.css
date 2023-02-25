@@ -65,7 +65,7 @@
         background-color: #ffffff;
     }
     .mainmenu-area #primary-menu {
-        background: linear-gradient(#D7497D 0%, #F17245 100%);
+        background: linear-gradient(#C71553 0%, #EF8230 100%);
     }
     .mainmenu-area #primary-menu ul {
         overflow-y: auto;
@@ -97,6 +97,15 @@
     .single-blog,
     .price-table.active {
         margin-top: 30px;
+    }
+    .price-table {
+      height:auto;
+    }
+    .merch{
+      display:block;
+    }
+    .merch img{
+      max-width:100%;
     }
     .single-team {
         margin-bottom: 15px;

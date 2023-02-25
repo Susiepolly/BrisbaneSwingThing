@@ -36,8 +36,8 @@ CSS INDEX
 
 :root {
   --menucolour: #D7497D;
-  --gradientstartcolour: #D7497D;
-  --gradientendcolour: #F17245;
+  --gradientstartcolour: #C71553;
+  --gradientendcolour: #EF8230;
   --backgroundpastel: #FDF9E8;
   --buttoncolour: #5C4673;
 }
@@ -176,7 +176,7 @@ input:-webkit-autofill:focus {
     text-align: center;
     line-height: 2.5em;
     background-color: #ffffff;
-    color: var(--menucolour);
+    color: var(--gradientstartcolour);
     border-radius: 100px;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
@@ -184,7 +184,7 @@ input:-webkit-autofill:focus {
 }
 
 .social-menu li a:hover {
-    background-color: var(--menucolour);
+    background-color: var(--gradientstartcolour);
     color: #ffffff;
     -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
@@ -227,7 +227,7 @@ input:-webkit-autofill:focus {
 .button.white,
 .button:hover {
     background-color: #ffffff;
-    color: var(--menucolour);
+    color: var(--gradientstartcolour);
 }
 
 .button.white:hover {
@@ -379,6 +379,11 @@ input:-webkit-autofill:focus {
   color: var(--buttoncolour);
 }
 
+.panel a{
+  font-weight: bold;
+  color: var(--buttoncolour);
+}
+
 /**
 *Mainmenu-area
 **/
@@ -419,7 +424,7 @@ input:-webkit-autofill:focus {
     text-align: center;
 }
 
-.mainmenu-area #primary-menu > ul > li > a:before {
+/*.mainmenu-area #primary-menu > ul > li > a:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -445,10 +450,10 @@ input:-webkit-autofill:focus {
 .mainmenu-area #primary-menu ul li.active a,
 .mainmenu-area #primary-menu ul li a:hover {
     border-top: 3px solid #ffffff;
-}
+}*/
 
 .mainmenu-area.affix {
-    background-color: var(--menucolour);
+    background-color: var(--gradientstartcolour);
 }
 
 .navbar-center {
@@ -489,11 +494,11 @@ input:-webkit-autofill:focus {
 }
 
 .header-text h2 {
-    margin-bottom: 20px;
+    margin-bottom: auto;
     font-size: 50px;
     text-align: center;
     color: #ffffff;
-    margin-top: 0px;
+    margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -811,6 +816,13 @@ input:-webkit-autofill:focus {
     margin-bottom: 30px;
 }
 
+.price-section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+
 .price-table {
     padding: 50px 40px;
     border-radius: 2px;
@@ -818,7 +830,9 @@ input:-webkit-autofill:focus {
     background-color: #ffffff;
     color: #515656;
     position: relative;
-    margin-top: 20px
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height:100%;
 }
 
 .price-table.active {
@@ -847,6 +861,17 @@ input:-webkit-autofill:focus {
     color: #ffffff;
     border-radius: 0 0 50% 50%;
     padding-bottom: 5px;
+}
+
+.merch {
+  display:flex;
+  margin-top: 30px;
+}
+.merch img{
+  max-width:25%;
+}
+.merch p{
+  padding:30px;
 }
 
 /**
@@ -1141,4 +1166,22 @@ preloader
         transform: perspective(140px) rotateY(180deg);
         opacity: 0;
     }
+}
+
+.code-of-conduct hr{
+  color: #515656;
+  height:5px;
+}
+
+.code-of-conduct h2{
+  font-size: 40px;
+  padding: 15px;
+}
+
+.code-of-conduct a{
+  font-weight: bold;
+  color: var(--buttoncolour);
+}
+.code-of-conduct li{
+  padding: 5px;
 }
