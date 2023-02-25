@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors',1);  
+error_reporting(E_ALL);
 
 #Receive user input
 $email_address = $_POST['email_address'];
