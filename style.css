@@ -982,13 +982,13 @@ input:-webkit-autofill:focus {
 
 
 .footer-top {
-    margin-bottom: 150px;
+    margin-bottom: 30px;
 }
 
 .side-icon-box {
-    margin-bottom: 30px;
     position: relative;
     padding-left: 80px;
+    margin-top: 50px;
 }
 
 .side-icon-box a {
@@ -1006,7 +1006,12 @@ input:-webkit-autofill:focus {
     display: block;
     margin-bottom: 10px;
 }
-
+.google-form{
+  margin:0;
+}
+.contact-form{
+    height: 820px;
+}
 .footer-middle {
     margin-bottom: 60px;
 }
