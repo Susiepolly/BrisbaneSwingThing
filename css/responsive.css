@@ -39,7 +39,6 @@
     }
     .side-icon-box {
         min-width: 50%;
-        margin-top: 30px;
     }
 }
 
@@ -137,12 +136,8 @@
       display: inherit;
     }
     .side-icon-box {
-        margin-top: 25px;
         margin-left: 20px;
         width:100%;
-    }
-    .contact-form{
-        height: 1000px;
     }
 }
 
