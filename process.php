@@ -1,51 +1,45 @@
 <?php
-// Configure your Subject Prefix and Recipient here
-$subjectPrefix = '[Contact via website]';
-$emailTo       = 'susie_poll@yahoo.co.uk';
-$errors = array(); // array to hold validation errors
-$data   = array(); // array to pass back data
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name    = stripslashes(trim($_POST['name']));
-    $email   = stripslashes(trim($_POST['email']));
-    $subject = stripslashes(trim($_POST['subject']));
-    $message = stripslashes(trim($_POST['message']));
-    if (empty($name)) {
-        $errors['name'] = 'Name is required.';
-    }
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = 'Email is invalid.';
-    }
-    if (empty($subject)) {
-        $errors['subject'] = 'Subject is required.';
-    }
-    if (empty($message)) {
-        $errors['message'] = 'Message is required.';
-    }
-    // if there are any errors in our errors array, return a success boolean or false
-    if (!empty($errors)) {
-        $data['success'] = false;
-        $data['errors']  = $errors;
-    } else {
-        $subject = "$subjectPrefix $subject";
-        $body    = '
-            <strong>Name: </strong>'.$name.'<br />
-            <strong>Email: </strong>'.$email.'<br />
-            <strong>Message: </strong>'.nl2br($message).'<br />
-        ';
-        $headers  = "MIME-Version: 1.1" . PHP_EOL;
-        $headers .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
-        $headers .= "Content-Transfer-Encoding: 8bit" . PHP_EOL;
-        $headers .= "Date: " . date('r', $_SERVER['REQUEST_TIME']) . PHP_EOL;
-        $headers .= "Message-ID: <" . $_SERVER['REQUEST_TIME'] . md5($_SERVER['REQUEST_TIME']) . '@' . $_SERVER['SERVER_NAME'] . '>' . PHP_EOL;
-        $headers .= "From: " . "=?UTF-8?B?".base64_encode($name)."?=" . "<$email>" . PHP_EOL;
-        $headers .= "Return-Path: $emailTo" . PHP_EOL;
-        $headers .= "Reply-To: $email" . PHP_EOL;
-        $headers .= "X-Mailer: PHP/". phpversion() . PHP_EOL;
-        $headers .= "X-Originating-IP: " . $_SERVER['SERVER_ADDR'] . PHP_EOL;
-        mail($emailTo, "=?utf-8?B?" . base64_encode($subject) . "?=", $body, $headers);
-        $data['success'] = true;
-        $data['message'] = 'Congratulations. Your message has been sent successfully';
-    }
-    // return all our data to an AJAX call
-    echo json_encode($data);
+
+#Receive user input
+$email_address = $_POST['email_address'];
+$feedback = $_POST['feedback'];
+
+#Filter user input
+function filter_email_header($form_field) {
+return preg_replace('/[nr|!/<>^$%*&]+/','',$form_field);
 }
+
+$email_address  = filter_email_header($email_address);
+
+#Send email
+$headers = "From: $email_addressn";
+$sent = mail('you@domain.com', 'Feedback Form Submission', $feedback, $headers);
+
+#Thank user or notify them of a problem
+if ($sent) {
+
+?><html>
+<head>
+<title>Thank You</title>
+</head>
+<body>
+<h1>Thank You</h1>
+<p>Thank you for your feedback.</p>
+</body>
+</html>
+<?php
+
+} else {
+
+?><html>
+<head>
+<title>Something went wrong</title>
+</head>
+<body>
+<h1>Something went wrong</h1>
+<p>We could not send your feedback. Please try again.</p>
+</body>
+</html>
+<?php
+}
+?>
