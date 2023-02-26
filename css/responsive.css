@@ -39,6 +39,8 @@
     }
     .side-icon-box {
         min-width: 50%;
+        margin-bottom: 20px;
+        margin-top: 15px;
     }
 }
 
@@ -138,6 +140,11 @@
     .side-icon-box {
         margin-left: 20px;
         width:100%;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .contact-form{
+      height:1020px;
     }
 }
 
