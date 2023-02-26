@@ -989,6 +989,7 @@ input:-webkit-autofill:focus {
     position: relative;
     padding-left: 80px;
     margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 .side-icon-box a {
@@ -1009,9 +1010,9 @@ input:-webkit-autofill:focus {
 .google-form{
   margin:0;
 }
-/*.contact-form{
-    height: 820px;
-}*/
+.contact-form{
+    height: 850px;
+}
 .footer-middle {
     margin-bottom: 60px;
 }
