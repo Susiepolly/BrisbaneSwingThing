@@ -42,6 +42,9 @@
         margin-bottom: 20px;
         margin-top: 15px;
     }
+    .header img{
+      margin-top: 0px;
+    }
 }
 
 
@@ -52,9 +55,12 @@
         font-size: 13px;
     }
     .header-area {
-        padding-top: 120px;
-        padding-bottom: 100px;
-        height: auto;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 100vh;
+    }
+    .header-text {
+      margin: auto;
     }
     .page-title h2,
     .header-text h2 {
@@ -79,22 +85,23 @@
         overflow: hidden;
     }
     .box {
-        /**padding: 30px 15px;**/
+        padding: 15px 0px;
         height:auto;
     }
     .box-icon {
         text-align: center;
     }
-    .box-image{
+    .box-image {
         text-align: center;
         max-width: 100%;
+        margin: 15px;
     }
     .box h4 {
         text-transform: uppercase;
         text-align: center;
     }
     .box-words {
-        margin-top:20px;
+        margin: 20px 20px 0px 20px;
     }
     .single-blog,
     .price-table.active {
@@ -102,6 +109,10 @@
     }
     .price-table {
       height:auto;
+      margin-bottom: 30px;
+    }
+    .price-section{
+      padding: 0px 10px;
     }
     .merch{
       display:block;

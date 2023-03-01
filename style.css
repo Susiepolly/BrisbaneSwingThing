@@ -494,28 +494,29 @@ input:-webkit-autofill:focus {
 }
 
 .header-text h2 {
-    margin-bottom: auto;
+    margin: auto;
     font-size: 50px;
     text-align: center;
     color: #ffffff;
-    margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    letter-spacing: 10px;
 }
 
 .header {
     margin-top: 40px;
     margin-bottom: 20px;
-    font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 .header img {
-    max-height: 80vh;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    max-height: 70vh;
 }
 
 .header-text .button {
@@ -820,18 +821,17 @@ input:-webkit-autofill:focus {
         display: flex;
         flex-wrap: wrap;
         padding: 30px;
+        justify-content: space-around;
     }
 
 
 .price-table {
     padding: 50px 40px;
-    border-radius: 2px;
+    border-radius: 8px;
     text-align: center;
     background-color: #ffffff;
     color: #515656;
     position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
     height:100%;
 }
 
