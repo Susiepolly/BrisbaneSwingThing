@@ -222,6 +222,8 @@ input:-webkit-autofill:focus {
     border: none;
     -webkit-box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .button.white,
@@ -258,19 +260,6 @@ input:-webkit-autofill:focus {
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-
-/**.page-title h2:after {
-    content: "\e675";
-    font-family: 'themify';
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    bottom: -10px;
-    width: 15px;
-    height: 15px;
-    font-size: 14px;
-}**/
 
 /**
 *Box-style
