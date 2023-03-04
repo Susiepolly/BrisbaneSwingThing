@@ -80,6 +80,9 @@ h6 {
     font-weight: 600;
     letter-spacing: 0.05em;
 }
+h4 {
+  text-align: center;
+}
 
 html,
 body {
