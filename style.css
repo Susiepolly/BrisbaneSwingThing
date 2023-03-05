@@ -157,7 +157,7 @@ input:-webkit-autofill:focus {
 .social-menu {
     list-style: none;
     margin: 0;
-    padding: 10px;
+    padding: 5px;
 }
 
 .social-menu ul {
@@ -174,8 +174,8 @@ input:-webkit-autofill:focus {
 
 .social-menu li a {
     display: block;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     line-height: 2.5em;
     background-color: #ffffff;
@@ -183,7 +183,7 @@ input:-webkit-autofill:focus {
     border-radius: 100px;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .social-menu li a:hover {
@@ -284,12 +284,8 @@ input:-webkit-autofill:focus {
     border-radius: 5px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    align-items: center;
-    vertical-align: middle;
-    justify-content: center;
     overflow: auto;
     margin-top: 20px;
-
 }
 
 .box:hover {
@@ -315,23 +311,24 @@ input:-webkit-autofill:focus {
 }
 
 .box-image {
-  max-width: 45%;
-  height:auto;
-  margin: 20px 50px;
+  width: 50%;
+  height: 100%;
+  padding: auto;
+  margin:auto;
   display:flex;
-  vertical-align: center;
+  text-align: center;
+  vertical-align: middle;
   align-items: center;
   justify-content: center;
   align-self: center;
   overflow: hidden;
 }
-.box-image img {
-  width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
+.box-image img {;
   overflow: hidden;
-  display:block;
-  vertical-align: center;
+  display:flex;
+  vertical-align: middle;
+  align-self: center;
+  margin: 50px 20px;
 }
 
 .box .box-icon img {
@@ -359,7 +356,7 @@ input:-webkit-autofill:focus {
 }
 
 .box-words {
-    margin:50px;
+    margin:30px;
     margin-bottom: 20px;
     vertical-align: middle;
 }
@@ -857,10 +854,11 @@ input:-webkit-autofill:focus {
 
 .merch {
   display:flex;
-  margin-top: 30px;
+  margin: auto;
 }
 .merch img{
   max-width:25%;
+  height:100%;
 }
 .merch p{
   padding:30px;

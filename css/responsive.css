@@ -1,6 +1,12 @@
 /* Medium Layout: 1280px. */
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+.social-menu li a {
+    width: 18px;
+    height: 30px;
+    font-size: 14px;
+}
+}
 .mainmenu-area {
   float:none;
   display: inline-block;
@@ -45,6 +51,22 @@
     .header img{
       margin-top: 0px;
     }
+    .box-image img{
+        margin: 50px 20px 20px 20px;
+    }
+    .merch {
+      display:flex;
+      flex-wrap: wrap;
+    }
+    .merch img{
+      max-width:50%;
+    }
+    .social-menu li a {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
 }
 
 
@@ -93,8 +115,15 @@
     }
     .box-image {
         text-align: center;
-        max-width: 100%;
-        margin: 15px;
+        width: 100%;
+        padding:15px;
+        display:flex;
+        height:auto;
+        overflow:hidden;
+    }
+    .box-image img{
+      display:flex;
+      margin: 0px;
     }
     .box h4 {
         text-transform: uppercase;
@@ -115,10 +144,15 @@
       padding: 0px 10px;
     }
     .merch{
-      display:block;
+      display:flex;
+      flex-wrap: wrap;
     }
     .merch img{
       max-width:100%;
+    }
+    .merch-text {
+      text-align: center;
+      margin:inherit;
     }
     .single-team {
         margin-bottom: 15px;
@@ -156,6 +190,11 @@
     }
     .contact-form{
       height:1020px;
+    }
+    .social-menu li a {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
     }
 }
 
