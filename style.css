@@ -856,10 +856,11 @@ input:-webkit-autofill:focus {
 .merch {
   display:flex;
   margin: auto;
+  align-items: flex-start;
 }
 .merch img{
   max-width:25%;
-  height:100%;
+  height:auto;
 }
 .merch p{
   padding:30px;
