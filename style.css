@@ -776,6 +776,9 @@ input:-webkit-autofill:focus {
   max-width: 30%;
   margin:25px 40px;
 }
+.band-image img{
+  max-height: 300px;
+}
 
 
 .band-box h3{
