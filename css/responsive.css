@@ -195,6 +195,9 @@
       padding-top: 15px;
       padding-bottom: 0;
     }
+    .band-image img{
+      max-height: none;
+    }
     .side-icon-box {
         margin-left: 20px;
         width:100%;
