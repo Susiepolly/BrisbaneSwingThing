@@ -756,16 +756,21 @@ input:-webkit-autofill:focus {
 }
 
 .bands {
-  display: inline-block;
-  flex-wrap: wrap;
-  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  justify-content: space-around;
+
+
 
 }
 
 .band-box{
+  -webkit-box-shadow: 0 0 0 0 #ffffff;
+  box-shadow: 0 0 0 0 #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 5px;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  overflow: auto;
+
   background-color: #ffffff;
   border-radius: 2%;
   margin: 10px;
